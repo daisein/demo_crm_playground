@@ -13,7 +13,8 @@ puts 'database is clean'
   restaurant = Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
-    rating: rand(1..5)
+    rating: rand(1..5),
+    chef_name: Faker::Artist.name #=> "Michelangelo"
     )
   puts "restaurant #{restaurant.id} is created"
 end
